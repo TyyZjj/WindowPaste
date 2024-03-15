@@ -8,8 +8,8 @@ Test::Test(QWidget *parent)
     ui.setupUi(this);
 
 	QStringList lstWndName;
-	lstWndName.append(QString::fromLocal8Bit("富鑫林外观缺陷检测系统"));
-	sProcInfo procInfo("E:/NewGit/alg-KB-Outlook/Bin/Release/Inspection-wg.exe", lstWndName);
+	lstWndName.append(QString::fromLocal8Bit("Window Name"));
+	sProcInfo procInfo("E:/NewGit/xxxx.exe", lstWndName);
 	CMultiProcManager::GetKernel()->start(procInfo);
 
 	connect(CMultiProcManager::GetKernel(), &CMultiProcManager::signalProcessStarted, this, 
